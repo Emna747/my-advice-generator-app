@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inconsolata:wght@500&family=Poppins:wght@200&display=swap');
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+body{
+   background-color: hsl(218, 23%, 16%);
+   
+}
+.wrapper{ width: 500px;
+    height: 280px;
+    margin: 0 auto;
+ 
+    border-radius: 7%;
+    background-color: hsl(217, 19%, 24%);
+    }
+ 
+ 
+ 
+.advicenumber {text-align: center;
+color:hsl(150, 100%, 66%) ;
+font-size: 17px;
+font-family: 'Poppins', Arial, Helvetica, sans-serif;
+font-weight: bold;}
+.advicetext {
+font-family: 'Comfortaa', cursive;
+font-size: 20px;
+font-weight: bold;
+padding: 2rem 0.3rem 2rem 0.3rem;
+text-align: center;
+color: white;
+margin: 0 auto;
+width: 400px;
+height: 200px;
+
+}
+ 
+ 
+#advicegenerator{
+ 
+  width: 55px;
+  height: 18%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+margin-top: 15px;
+
+ 
+}
+.dice-icon{width: 33px;
+padding: 3px;}
+#advicegenerator:hover {background-color:  hsl(150, 100%, 66%);
+    box-shadow: 0 0 1.5rem hsl(150, 100%, 66%) }
+.divider{
+    margin: auto;
+ display: block;
+    z-index: 38;
+}
+.attribution {
+    text-align: center;
+    margin-top: 1.5rem;
+    color:#bae8e8;
+    margin-top: 5rem;
+    }
+ 
+    a:link{color: hsl(150, 100%, 66%);
+    text-decoration: none;}
+    a:visited{color: hsl(150, 60%, 92%);
+        text-decoration: none;}
+    a:hover{color: hsl(150, 100%, 66%);
+        text-decoration: none;}
