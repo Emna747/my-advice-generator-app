@@ -64,11 +64,12 @@ height: 200px;}
 
 .divider{
     position: absolute;
-    width: 25rem;
+    width: 25em;
     left: 5%;
     bottom: 15%; 
     margin: 0 auto;
     z-index: 10;
+    overflow:hidden;
 }
 .attribution {
     text-align: center;
@@ -82,39 +83,26 @@ height: 200px;}
     a:visited{color: hsl(150, 60%, 92%);
         text-decoration: none;}
     a:hover{color: hsl(150, 100%, 66%);
-        text-decoration: none;}
+        text-decoration: none;} 
 
-        @media all and (max-width:62em);
-        @media all and (max-width:45em)
-{.wrapper{  
-  position: relative;
-  max-width: 3rem;
-  min-height: 3rem;
-  margin: 0 auto; 
-  border-radius: 7%;
-  background-color: hsl(217, 19%, 24%);
- }
- .divider{
-  position: absolute;
-  width: 5rem;
-  left: 5%;
-  bottom: 10%; 
-  margin: 0 auto;
-  z-index: 10;
+
+        @media (max-width: 50em)
+{ 
+  .wrapper{ 
+    position: relative;
+     max-width: 90%;
+     min-height: 70%;
+     margin: 0 auto;
+      border-radius: 7%;
+      background-color: hsl(217, 19%, 24%);
+      }
+      .divider{
+        position: absolute;
+        max-width:  90%;
+        left: 5%;
+        bottom: 15%; 
+        margin: 0 auto;
+        z-index: 10;
+        overflow:hidden;
+    }
 }
-.attribution {
-  text-align: center;
-  margin-top: 1.5rem;
-  color:#bae8e8;
-  margin-top: 2rem;
-  }
-  .advicetext {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem 0.3rem;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    width: 12rem;
-    height: 6rem;}}
