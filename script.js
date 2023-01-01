@@ -1,15 +1,13 @@
-let advicenumber = document.getElementsByClassName("advicenumber");
-let advicetext = document.getElementsByClassName("advicetext");
-
-const diceBtn = document.getElementById("advicegenerator")
-
-.addEventListener("click", getAdvice);
-
-function getAdvice(){
-    fetch("https://api.adviceslip.com/advice", {cache: "no-cache"}) 
-    .then(response => response.json())
-    .then((data) => {
-        advicenumber.innerHTML = data.slip.id;
-        advicetext.innerHTML = `“${data.slip.advice}”`;
-      });
+const apiurl = "https://api.adviceslip.com/advice";
+const diceBtn = document
+  .getElementById("advicegenerator")
+  .addEventListener("click", getAdvice);
+async function getAdvice() {
+  const response = await fetch(apiurl, { cache: "no-store" });
+  const data = await response.json();
+  let adviceGener = data.slip.advice;
+  let numGener = data.slip.id;
+  document.getElementById("advicenumber").innerHTML = `${numGener}`;
+  document.getElementById("advicetext").innerHTML = `${adviceGener}`;
 }
+getAdvice();
