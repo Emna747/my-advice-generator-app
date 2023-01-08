@@ -102,12 +102,23 @@ a:hover {
   .divider {
     display: none;
   }
+  .advicecontent {
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media only screen and (min-device-width: 50em) and (max-device-width: 64em) {
   .wrapper {
     position: relative;
-    max-width: 80%;
+    max-width: 74%;
     min-height: 70%;
     margin: 0 auto;
     border-radius: 7%;
@@ -121,5 +132,17 @@ a:hover {
     margin: 0 auto;
     z-index: 10;
     overflow: hidden;
+  }
+  .advicecontent {
+    font-family: "Comfortaa", cursive;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 1.5rem 0.3rem;
+
+    width: 200px;
+    height: 200px;
   }
 }
